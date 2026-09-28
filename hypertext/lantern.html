@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ifancyyoumad.heart</title>
+
+    <link rel="icon" type="image/png" href="images/ifym_favicon.png">
+</head>
+
+<body bgcolor="black" text="white" link="white" vlink="white">
+
+    <p>I uncover it by degrees.</p>
+
+    <details ontoggle="if(this.open) { setTimeout(function() { document.getElementById('step2').removeAttribute('hidden'); }, 750); this.removeAttribute('ontoggle'); }">
+        <summary><u>[A LITTLE.]</u></summary>
+
+        <p>Nothing.</p>
+
+        <details id="step2" hidden ontoggle="if(this.open) { setTimeout(function() { document.getElementById('step3').removeAttribute('hidden'); }, 750); this.removeAttribute('ontoggle'); }">
+            <summary><u>[A LITTLE MORE.]</u></summary>
+
+            <p>A hair-thin sliver of light.</p>
+
+            <details id="step3" hidden ontoggle="if(this.open) { setTimeout(function() { document.getElementById('step4').removeAttribute('hidden'); }, 750); this.removeAttribute('ontoggle'); }">
+                <summary><u>[A LITTLE MORE.]</u></summary>
+
+                <p>It moves across the room.</p>
+
+                <details id="step4" hidden ontoggle="if(this.open) { setTimeout(function() { document.getElementById('step5').removeAttribute('hidden'); }, 750); this.removeAttribute('ontoggle'); }">
+                    <summary><u>[A LITTLE MORE.]</u></summary>
+
+                    <p>Across the bed.</p>
+
+                    <details id="step5" hidden ontoggle="if(this.open) { setTimeout(function() { document.getElementById('step6').removeAttribute('hidden'); }, 750); this.removeAttribute('ontoggle'); }">
+                        <summary><u>[A LITTLE MORE.]</u></summary>
+
+                        <p>His face.</p>
+
+                        <details id="step6" hidden ontoggle="if(this.open) { setTimeout(function() { revealEye(); }, 500); setTimeout(function() { document.getElementById('lantern_choice').removeAttribute('hidden'); }, 3000); this.removeAttribute('ontoggle'); }">
+                            <summary><u>[A LITTLE MORE.]</u></summary>
+
+                            <p>The <b><i><font color="#0096FF">eye.</font></i></b></p>
+
+                            <font color="#0096FF">
+                                <pre id="the_eye" hidden></pre>
+                            </font>
+
+                        </details>
+
+                    </details>
+
+                </details>
+
+            </details>
+
+        </details>
+
+    </details>
+
+
+    <script>
+
+        const frames = [
+
+`                                                  "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"
+                                      "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+                           "whenever it fell upon me, my blood ran cold"   "whenever it fell upon me, my blood ran cold"
+                 "one of his eyes resembled that of a vulture"                       "one of his eyes resembled that of a vulture"
+          "it was open—wide, wide open"                                                       "it was open—wide, wide open"
+     "a pale blue eye, with a film over it"                                                       "a pale blue eye, with a film over it"
+  "whenever it fell upon me, my blood ran cold"                                                       "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                                           "one of his eyes resembled that of a vulture"
+"it was open—wide, wide open"                                                                               "it was open—wide, wide open"
+"a pale blue eye, with a film over it"                                                                       "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"                                                                   "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                                                   "one of his eyes resembled that of a vulture"
+"it was open—wide, wide open"                                                                                   "it was open—wide, wide open"
+"a pale blue eye, with a film over it"                                                                           "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"                              "Evil Eye"                               "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                             "Evil Eye"                              "one of his eyes resembled that of a vulture"
+"a pale blue eye, with a film over it"                                                                           "a pale blue eye, with a film over it"
+"it was open—wide, wide open"                                                                                   "it was open—wide, wide open"
+"whenever it fell upon me, my blood ran cold"                                                                   "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                                               "one of his eyes resembled that of a vulture"
+ "a pale blue eye, with a film over it"                                                                     "a pale blue eye, with a film over it"
+    "whenever it fell upon me, my blood ran cold"                                                     "whenever it fell upon me, my blood ran cold"
+         "it was open—wide, wide open"                                                               "it was open—wide, wide open"
+               "one of his eyes resembled that of a vulture"                           "one of his eyes resembled that of a vulture"
+                        "whenever it fell upon me, my blood ran cold"   "whenever it fell upon me, my blood ran cold"
+                                    "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+                                                "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"`,
+
+`                                      "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"
+                           "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+                "whenever it fell upon me, my blood ran cold"   "whenever it fell upon me, my blood ran cold"
+        "one of his eyes resembled that of a vulture"                     "one of his eyes resembled that of a vulture"
+   "it was open—wide, wide open"                                                     "it was open—wide, wide open"
+ "a pale blue eye, with a film over it"                                                 "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"                                             "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                                 "one of his eyes resembled that of a vulture"
+"it was open—wide, wide open"                                                                   "it was open—wide, wide open"
+"a pale blue eye, with a film over it"                         "Evil Eye"                         "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"                    "Evil Eye"                    "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                                     "one of his eyes resembled that of a vulture"
+"it was open—wide, wide open"                                                                   "it was open—wide, wide open"
+"a pale blue eye, with a film over it"                                                     "a pale blue eye, with a film over it"
+ "whenever it fell upon me, my blood ran cold"                                           "whenever it fell upon me, my blood ran cold"
+     "one of his eyes resembled that of a vulture"                                     "one of his eyes resembled that of a vulture"
+          "it was open—wide, wide open"                                           "it was open—wide, wide open"
+                "whenever it fell upon me, my blood ran cold"     "whenever it fell upon me, my blood ran cold"
+                           "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+                                      "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"`,
+
+`                         "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"
+              "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+      "whenever it fell upon me, my blood ran cold"   "whenever it fell upon me, my blood ran cold"
+ "one of his eyes resembled that of a vulture"                     "one of his eyes resembled that of a vulture"
+"it was open—wide, wide open"                                             "it was open—wide, wide open"
+"a pale blue eye, with a film over it"                 "Evil Eye"                 "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"      "Evil Eye"      "whenever it fell upon me, my blood ran cold"
+"one of his eyes resembled that of a vulture"                                           "one of his eyes resembled that of a vulture"
+ "it was open—wide, wide open"                                                   "it was open—wide, wide open"
+    "a pale blue eye, with a film over it"                                   "a pale blue eye, with a film over it"
+         "whenever it fell upon me, my blood ran cold"   "whenever it fell upon me, my blood ran cold"
+                    "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"`,
+
+`             "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"
+     "a pale blue eye, with a film over it"   "a pale blue eye, with a film over it"
+"whenever it fell upon me, my blood ran cold"           "Evil Eye"           "whenever it fell upon me, my blood ran cold"
+ "one of his eyes resembled that of a vulture"                           "one of his eyes resembled that of a vulture"
+     "it was open—wide, wide open"                               "it was open—wide, wide open"
+          "a pale blue eye, with a film over it"         "a pale blue eye, with a film over it"
+               "one of his eyes resembled that of a vulture"   "one of his eyes resembled that of a vulture"`,
+
+`        "the eye was always closed"   "the eye was always closed"   "the eye was always closed"
+   "the eye was always closed"   "the eye was always closed"   "the eye was always closed"
+"the eye was always closed"   "the eye was always closed"   "the eye was always closed"   "the eye was always closed"
+   "the eye was always closed"   "the eye was always closed"   "the eye was always closed"
+        "the eye was always closed"   "the eye was always closed"   "the eye was always closed"`
+
+        ];
+
+
+        const frameWidth = Math.max(...frames.map(frame =>
+            Math.max(...frame.split("\n").map(line => line.length))
+        ));
+
+        const frameHeight = Math.max(...frames.map(frame =>
+            frame.split("\n").length
+        ));
+
+
+        function centerFrame(frame) {
+            const lines = frame.split("\n");
+
+            const topPadding = Math.floor((frameHeight - lines.length) / 2);
+            const bottomPadding = frameHeight - lines.length - topPadding;
+
+            const centeredLines = lines.map(line => {
+                const leftPadding = Math.floor((frameWidth - line.length) / 2);
+                return " ".repeat(leftPadding) + line;
+            });
+
+            return [
+                ...Array(topPadding).fill(""),
+                ...centeredLines,
+                ...Array(bottomPadding).fill("")
+            ].join("\n");
+        }
+
+
+        for (let i = 0; i < frames.length; i++) {
+            frames[i] = centerFrame(frames[i]);
+        }
+
+
+        const eye = document.getElementById("the_eye");
+
+        const opening = [4, 3, 2, 1, 0];
+        const blink = [1, 2, 3, 4, 3, 2, 1, 0];
+
+        let eyeStarted = false;
+
+        const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+
+        async function play(sequence, speed) {
+            for (const frame of sequence) {
+                eye.textContent = frames[frame];
+                await wait(speed);
+            }
+        }
+
+
+        async function revealEye() {
+            if (eyeStarted) return;
+
+            eyeStarted = true;
+            eye.hidden = false;
+
+            await play(opening, 150);
+
+            while (true) {
+                await wait(1500);
+                await play(blink, 90);
+            }
+        }
+
+    </script>
+
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+
+    <details id="lantern_choice" hidden>
+        <summary><u>[COVER THE LANTERN.]</u></summary>
+        <p>It's far too late for that.</p>
+
+        <p><a href="heart.html">[LISTEN.]</a></p>
+    </details>
+</body>
+
+</html>
