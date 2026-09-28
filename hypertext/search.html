@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifancyyoumad.heart</title>
+    <link rel="icon" type="images/png" href="images/ifym_favicon.png">
+</head>
+<body bgcolor="black" text="white" link="white" vlink="white" onload="h=false; m=false; k=false; o=false;">
+    
+    <p>Search wherever you like.</p>
+
+    <details ontoggle="if(this.open) { h=true; if(h&&m&&k&&o){document.getElementById('finish_search').removeAttribute('hidden');} this.removeAttribute('ontoggle'); }">
+        <summary><u>[THE HALL.]</u></summary>
+        <ul>
+            <li>Coats.</li>
+            <li>Shoes.</li>
+            <li>Umbrellas.</li>
+        </ul>
+    </details>
+
+    <details ontoggle="if(this.open) { m=true; if(h&&m&&k&&o){document.getElementById('finish_search').removeAttribute('hidden');} this.removeAttribute('ontoggle'); }">
+        <summary><u>[MY ROOM.]</u></summary>
+        <ul>
+            <li>Bed.</li>
+            <li>Washbasin.</li>
+            <li>Clothes.</li>
+        </ul>
+    </details>
+
+    <details ontoggle="if(this.open) { k=true; if(h&&m&&k&&o){document.getElementById('finish_search').removeAttribute('hidden');} this.removeAttribute('ontoggle'); }">
+        <summary><u>[THE KITCHEN.]</u></summary>
+        <ul>
+            <li>Cups.</li>
+            <li>Plates.</li>
+            <li>Utensils.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary><u>[THE OLD MAN'S ROOM.]</u></summary>
+        <ul>
+            <li>Bed.</li>
+            <li>Wardrobe.</li>
+            <li><details ontoggle="if(this.open) { o=true; if(h&&m&&k&&o){document.getElementById('finish_search').removeAttribute('hidden');} this.removeAttribute('ontoggle'); }"> 
+                <summary><u>Floor.</u></summary>
+                <p>Undisturbed.</p>
+            </details></li>
+        </ul>
+    </details>
+
+    <div id="finish_search" hidden>
+        <p>They appear satisfied.</p>
+
+        <details>
+            <summary><u>[LET THEM LEAVE.]</u></summary>
+            <p>Why? There is no rush.</p>
+            <p>If I let them leave now, it would be suspicious.</p>
+
+            <p><a href="chat.html">[CHAT WITH THEM.]</a></p>
+        </details>
+    </div>
+</body>
+</html>

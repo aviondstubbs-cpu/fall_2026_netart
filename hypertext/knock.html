@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifancyyoumad.heart</title>
+    <link rel="icon" type="images/png" href="images/ifym_favicon.png">
+</head>
+<body bgcolor="black" text="white" link="white" vlink="white">
+    
+    <p>It was four o'clock in the morning.</p>
+    <p>I looked through the peephole.</p>
+    <p>Three police officers stood on the other side of the door.</p>
+    <p>The neighbor must've heard something.</p>
+
+    <details id="choice_dontanswer" ontoggle="if(this.open) {document.getElementById('choice_panic').hidden = true; document.getElementById('choice_answer').hidden = true;}">
+        <summary><u>[DON'T ANSWER.]</u></summary>
+        <p>Too suspicious.</p>
+
+        <details>
+            <summary><u>[ANSWER.]</u></summary>
+            <p>I smile and welcome them inside.</p>
+            <p>They ask questions, of course.</p>
+            <p>The shriek? Mine. A nightmare.</p>
+            <p>The old man? Away in the country.</p>
+            <br/>
+            <p>They ask to search.</p>
+
+            <details>
+                <summary><u>[REFUSE.]</u></summary>
+                <p>Why would I?</p>
+            </details>
+
+            <p><a href="search.html">[LET THEM SEARCH.]</a></p>
+        </details>
+    </details>
+
+    <details id="choice_panic" ontoggle="if(this.open) {document.getElementById('choice_dontanswer').hidden = true; document.getElementById('choice_answer').hidden = true;}">
+        <summary><u>[PANIC.]</u></summary>
+        <p>About what?</p>
+
+        <details>
+            <summary><u>[ANSWER.]</u></summary>
+            <p>I smile and welcome them inside.</p>
+            <p>They ask questions, of course.</p>
+            <p>The shriek? Mine. A nightmare.</p>
+            <p>The old man? Away in the country.</p>
+            <br/>
+            <p>They ask to search.</p>
+
+            <details>
+                <summary><u>[REFUSE.]</u></summary>
+                <p>Why would I?</p>
+            </details>
+
+            <p><a href="search.html">[LET THEM SEARCH.]</a></p>
+        </details>
+    </details>
+
+    <details id="choice_answer" ontoggle="if(this.open) {document.getElementById('choice_dontanswer').hidden = true; document.getElementById('choice_panic').hidden = true;}">
+        <summary><u>[ANSWER.]</u></summary>
+        <p>I smile and welcome them inside.</p>
+        <p>They ask questions, of course.</p>
+        <p>The shriek? Mine. A nightmare.</p>
+        <p>The old man? Away in the country.</p>
+        <br/>
+        <p>They ask to search.</p>
+
+        <details>
+            <summary><u>[REFUSE.]</u></summary>
+            <p>Why would I?</p>
+        </details>
+
+        <p><a href="search.html">[LET THEM SEARCH.]</a></p>
+    </details>
+</body>
+</html>

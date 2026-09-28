@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifancyyoumad.heart</title>
+    <link rel="icon" type="images/png" href="images/ifym_favicon.png">
+</head>
+<body bgcolor="black" text="white" link="white" vlink="white">
+
+    <pre><h2>
+    _, _ _  _, _,_ ___   _,_ _ _ _
+    |\ | | / _ |_|  |    | / | | |
+    | \| | \ / | |  |    |/  | | |
+    ~  ~ ~  ~  ~ ~  ~    ~   ~ ~ ~
+    </h2></pre>
+
+    <p>It is midnight.</p>
+    <p>The old man's door is closed.</p>
+    <p>My hand is steady.</p>
+    <p>First, the latch.</p>
+
+    <details ontoggle="if(this.open) { document.getElementById('door_unlock').play(); this.removeAttribute('ontoggle'); }">
+        <summary><u>[UNLOCK IT.]</u></summary>
+        <p>Gently, I unlocked the door.</p>
+        <p>There is no reason to hurry.</p>
+
+        <details>
+            <summary><u>[CRACK THE DOOR.]</u></summary>
+            <p>I opened the door just a crack.</p>
+
+            <details ontoggle="if(this.open) { setTimeout(function() { document.getElementById('thumb_slips').removeAttribute('hidden'); }, 1000); setTimeout(function() { document.getElementById('thumb_slips2').removeAttribute('hidden'); }, 2000); setTimeout(function() { document.getElementById('old_man').removeAttribute('hidden'); }, 3000); setTimeout(function() { document.getElementById('choices').removeAttribute('hidden'); }, 4000); this.removeAttribute('ontoggle'); }">
+                <summary><u>[A LITTLE MORE.]</u></summary>
+                <p>The door opens farther.</p>
+                <p id="thumb_slips" hidden><i>My thumb slips.</i></p>
+                <p id="thumb_slips2" hidden><i>And the old man stirs.</i></p>
+                <pre id="old_man" hidden><font color="#0096FF">             "Who's there?"</font> he says.</pre>
+
+                <div id="choices" hidden>
+                    <details id="choice_answer" ontoggle="if(this.open) {document.getElementById('choice_run').hidden = true; document.getElementById('choice_stay').hidden = true;}">
+                        <summary><u>[ANSWER HIM.]</u></summary>
+                        <p>What would I say?</p>
+
+                        <p><a href="darkness.html">[DO NOT MOVE.]</a></p>
+                    </details>
+
+                    <details id="choice_run" ontoggle="if(this.open) {document.getElementById('choice_answer').hidden = true; document.getElementById('choice_stay').hidden = true;}">
+                        <summary><u>[RUN.]</u></summary>
+                        <p>No.</p>
+
+                        <p><a href="darkness.html">[DO NOT MOVE.]</a></p>
+                    </details>
+
+                    <details id="choice_stay" ontoggle="if(this.open) {window.location.href = 'darkness.html'; }">
+                        <summary><u>[DO NOT MOVE.]</u></summary>
+                    </details>
+                </div>
+            </details>
+        </details>
+    </details>
+
+    <audio id="door_unlock" src="audio/door_lock_turn.wav"></audio>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifancyyoumad.heart</title>
+    <link rel="icon" type="images/png" href="images/ifym_favicon.png">
+</head>
+<body bgcolor="black" text="white" link="white" vlink="white">
+    
+    <p>Something bothers me.</p>
+    
+    <details>
+        <summary><u>[WHAT?]</u></summary>
+        <p>It is not a sound.</p>
+        <p>It is a pressure.</p>
+        <p>Within my ears.</p>
+
+        <details>
+            <summary><u>[A HEADACHE.]</u></summary>
+            <p>Exactly that.</p>
+            <p>Nothing more.</p>
+
+            <details>
+                <summary><u>[IGNORE IT.]</u></summary>
+                <p>I continue speaking.</p>
+                <p>The pressure within my ears turns to a faint ringing within my ears.</p>
+
+                <details ontoggle="if(this.open) { document.getElementById('telltale_heart').play(); this.removeAttribute('ontoggle'); }">
+                    <summary><u>[IGNORE IT.]</u></summary>
+                    <p>I cannot.</p>
+                    <p>Something is beating.</p>
+
+                    <details>
+                        <summary><u>[HIS HEART.]</u></summary>
+                        <p>Impossible.</p>
+                        <p>Only a madman would even suggest something so inept.</p>
+                    </details>
+
+                    <details>
+                        <summary><u>[MY HEART.]</u></summary>
+                        <p>Mine is beating.</p>
+                        <p>That is not what I hear.</p>
+                    </details>
+
+                    <details>
+                        <summary><u>[CAN THEY HEAR IT?]</u></summary>
+                        <p>No.</p>
+                    </details>
+                    
+                    <p><a href="breakdown.html">[IGNORE IT.]</a></p>
+                </details>
+            </details>
+        </details>
+    </details>
+
+    <audio id="telltale_heart" src="audio/heart_beating.wav" loop oncanplay="this.volume = 0.4;"></audio>
+</body>
+</html>
