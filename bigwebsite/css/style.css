@@ -1,0 +1,90 @@
+body {
+    position: relative;
+    width: 2000px;
+    height: 2000px;
+    margin: 0;
+    background-color: rgb(230, 168, 86);
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+#title {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+#title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span {
+    font-style: italic;
+    color: darkred;
+}
+
+.place {
+    position: absolute;
+    text-align: center;
+}
+
+.place img {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+}
+
+.place h2 {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.place p {
+    margin: 0;
+}
+
+.malt-shop {
+    top: 350px;
+    left: 200px;
+}
+
+.apartments {
+    top: 200px;
+    left: 1200px;
+}
+
+.laundromat {
+    top: 850px;
+    left: 450px;
+}
+
+.walmart {
+    top: 900px;
+    left: 1350px;
+}
+
+.higashikata {
+    top: 1400px;
+    left: 700px;
+}
+
+#secret {
+    position: absolute;
+    top: 1600px;
+    left: 1500px;
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    border: 2px dashed darkred;
+    opacity: 0.8;
+}
+
+#secret img {
+    max-width: 300px;
+    height: auto;
+}
