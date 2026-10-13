@@ -1,0 +1,32 @@
+
+* {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    height: 100vh;
+}
+
+.purple {
+    background-color: #7353BA;
+}
+
+.blue {
+    background-color: #4DA8DA;
+}
+
+.yellow {
+    background-color: #FFD166;
+}
+
+.orange {
+    background-color: #F77F00;
+}
+
+.red {
+    background-color: #D62828;
+}
