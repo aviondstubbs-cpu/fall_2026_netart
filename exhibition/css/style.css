@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #e5ded1;
+    color: #302820;
+    font-family: Arial, sans-serif;
+    line-height: 1.55;
+}
+
+.corkboard {
+    max-width: 1150px;
+    margin: auto;
+    padding: 45px 35px 75px;
+    border: 35px solid transparent;
+    border-image: url("../images/corkboard.png") 40 36 47 35 / 40px 36px 47px 35px stretch;
+    background: #bb8a50 url("../images/cork-texture.png") repeat;
+    box-shadow: 0 10px 24px #0004;
+}
+
+.paper, .sticky {
+    position: relative;
+    box-shadow: 4px 7px 9px #38230f66;
+}
+
+.paper {
+    padding: 38px 25px 24px;
+    background: #fffdf4;
+    border: 1px solid #d6cab5;
+}
+
+.pin {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 44px;
+    height: 58px;
+    object-fit: contain;
+    transform: translateX(-50%) rotate(-10deg);
+    pointer-events: none;
+}
+
+.title-note {
+    width: 88%;
+    margin: 0 auto 75px;
+    text-align: center;
+    background: #faf3de;
+    transform: rotate(-1.4deg);
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin: 8px 0 12px;
+}
+
+h2 {
+    font-size: 22.4px;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 19.2px;
+    line-height: 1.3;
+    margin: 0 0 4px;
+}
+
+p {
+    margin: 0 0 14px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.about-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 75px;
+}
+
+.about-notes .paper:first-child {
+    transform: rotate(1.3deg);
+}
+
+.about-notes .paper:last-child {
+    transform: rotate(-1.5deg);
+    margin-top: 30px;
+    background: #fffae9;
+}
+
+.sticky {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 220px;
+    padding: 32px 25px 16px;
+    text-align: center;
+    background: #fce799;
+    border: 1px solid #dec981;
+    transform: rotate(3deg);
+    margin-bottom: 20px;
+}
+
+.sticky h2 {
+    margin: 0;
+}
+
+.artwork-notes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.artwork {
+    padding: 38px 19px 22px;
+    font-size: 14.72px;
+}
+
+.artwork:nth-of-type(1) {
+    transform: rotate(-2deg);
+}
+
+.artwork:nth-of-type(2) {
+    transform: rotate(2deg);
+    margin-top: 25px;
+    background: #fff9ee;
+}
+
+.artwork:nth-of-type(3) {
+    transform: rotate(-1deg);
+}
+
+.time-label {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8f5036;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.artist {
+    color: #6d594a;
+    font-size: 14.08px;
+}
+
+.artwork img:not(.pin) {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border: 7px solid white;
+    box-shadow: 1px 2px 5px #0004;
+}
+
+a {
+    color: #71312c;
+}
+
+a:hover {
+    color: #a82e24;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 10px;
+    }
+
+    .corkboard {
+        border-width: 22px;
+        padding: 40px 16px 55px;
+    }
+
+    .title-note {
+        width: 100%;
+        margin-bottom: 55px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .about-notes, .artwork-notes {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .about-notes {
+        margin-bottom: 60px;
+    }
+
+    .about-notes .paper:last-child, .artwork:nth-of-type(2) {
+        margin-top: 0;
+    }
+
+    .sticky {
+        margin-bottom: 0;
+    }
+
+    .artwork {
+        width: 100%;
+        max-width: 480px;
+        justify-self: center;
+    }
+}
