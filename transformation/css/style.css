@@ -1,0 +1,50 @@
+
+body {
+    background-color: #ffff99;
+    color: orange;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ff6600;
+}
+
+marquee {
+    background-color: orange;
+    color: yellow;
+    padding: 10px;
+}
+
+#bulb {
+    width: 200px;
+    cursor: pointer;
+}
+
+#secret {
+    display: none;
+}
+
+#secret img {
+    width: 250px;
+}
+
+body.dark {
+    background-color: black;
+    color: red;
+    font-family: "Courier New", monospace;
+}
+
+body.dark h1 {
+    color: red;
+}
+
+body.dark marquee {
+    background-color: darkred;
+    color: white;
+}
+
+body.dark #secret {
+    display: block;
+}
